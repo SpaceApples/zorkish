@@ -149,11 +149,13 @@
     <ClCompile Include="about.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainMenu.cpp" />
+    <ClCompile Include="state.cpp" />
     <ClCompile Include="stateManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="about.h" />
     <ClInclude Include="mainMenu.h" />
+    <ClInclude Include="state.h" />
     <ClInclude Include="stateManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

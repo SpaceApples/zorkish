@@ -1,9 +1,15 @@
 #pragma once
-class mainMenu
+#include "state.h"
+#include <iostream>
+class mainMenu :
+	public state
 {
 public:
 	mainMenu();
 	~mainMenu();
-	void loopMain();
+	void display();
+	void update();
+private:
+	char input = '0';
 };
 
