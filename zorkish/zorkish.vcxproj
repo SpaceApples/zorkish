@@ -147,6 +147,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="about.cpp" />
+    <ClCompile Include="adventure.cpp" />
+    <ClCompile Include="gameplay.cpp" />
+    <ClCompile Include="hallFame.cpp" />
+    <ClCompile Include="help.cpp" />
+    <ClCompile Include="highScore.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainMenu.cpp" />
     <ClCompile Include="state.cpp" />
@@ -154,6 +159,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="about.h" />
+    <ClInclude Include="adventure.h" />
+    <ClInclude Include="gameplay.h" />
+    <ClInclude Include="hallFame.h" />
+    <ClInclude Include="help.h" />
+    <ClInclude Include="highScore.h" />
     <ClInclude Include="mainMenu.h" />
     <ClInclude Include="state.h" />
     <ClInclude Include="stateManager.h" />

@@ -3,16 +3,13 @@
 #include "stateManager.h"
 #include <Windows.h>
 #include <iostream>
-class about :
+class help :
 	public state
 {
 public:
-	about();
-	~about();
+	help();
+	~help();
 	void display();
 	void update();
-
-private:
-	bool displayed = false;
 };
 

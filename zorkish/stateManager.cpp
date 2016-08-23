@@ -8,7 +8,7 @@ stateManager::stateManager(){
 }
 
 
-stateManager::~stateManager() { delete this; }
+stateManager::~stateManager() {}
 
 stateManager* stateManager::instance() {
 	if (_instance == NULL) {
@@ -21,6 +21,8 @@ void stateManager::update() {
 	currentState->display();
 	currentState->update();
 }
+
+void stateManager::setState(state* _state) { currentState = _state; }
 
 void stateManager::setQuit(bool _quit) { quit = _quit; }
 

@@ -1,18 +1,17 @@
 #pragma once
 #include "state.h"
 #include "stateManager.h"
-#include <Windows.h>
+#include "gameplay.h"
 #include <iostream>
-class about :
+class adventure :
 	public state
 {
 public:
-	about();
-	~about();
+	adventure();
+	~adventure();
 	void display();
 	void update();
-
 private:
-	bool displayed = false;
+	char input = '0';
 };
 

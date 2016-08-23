@@ -1,7 +1,8 @@
+#pragma once
 #include "state.h"
 #include "mainMenu.h"
-
 #pragma once
+
 class stateManager
 {
 public:
@@ -11,6 +12,7 @@ public:
 	void update();
 	bool getQuit();
 	void setQuit(bool);
+	void setState(state*);
 private:
 	state* currentState;
 	static stateManager* _instance;

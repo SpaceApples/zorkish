@@ -1,5 +1,4 @@
 #include "mainMenu.h"
-#include "stateManager.h"
 
 
 
@@ -24,19 +23,26 @@ void mainMenu::update() {
 	switch (input)
 	{
 	case '1':
-		std::cout << "Adventure" << std::endl;
+		stateManager::instance()->setState(new adventure());
+		std::cout << std::endl;
+		delete this;
 		break;
 	case '2':
-		std::cout << "fame" << std::endl;
+		stateManager::instance()->setState(new hallFame());
+		std::cout << std::endl;
+		delete this;
 		break;
 	case '3':
-		std::cout << "halp" << std::endl;
+		stateManager::instance()->setState(new help());
+		std::cout << std::endl;
+		delete this;
 		break;
 	case '4':
-		std::cout << "about" << std::endl;
+		stateManager::instance()->setState(new about());
+		std::cout << std::endl;
+		delete this;
 		break;
 	case '5':
-		std::cout << "quit" << std::endl;
 		stateManager::instance()->setQuit(true);
 		break;
 	default:
