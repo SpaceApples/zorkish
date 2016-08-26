@@ -1,13 +1,22 @@
-#include "mainMenu.h"
-
-
 #pragma once
+#include "state.h"
+#include "mainMenu.h"
+#pragma once
+
 class stateManager
 {
 public:
-	stateManager(int state);
+	static stateManager* instance();
+	stateManager();
 	~stateManager();
+	void update();
+	bool getQuit();
+	void setQuit(bool);
+	void setState(state*);
 private:
-	mainMenu mainMenuState;
+	state* currentState;
+	static stateManager* _instance;
+	bool quit = false;
+
 };
 

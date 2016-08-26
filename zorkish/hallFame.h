@@ -1,18 +1,15 @@
 #pragma once
 #include "state.h"
 #include "stateManager.h"
-#include <Windows.h>
 #include <iostream>
-class about :
+#include <Windows.h>
+class hallFame :
 	public state
 {
 public:
-	about();
-	~about();
+	hallFame();
+	~hallFame();
 	void display();
 	void update();
-
-private:
-	bool displayed = false;
 };
 

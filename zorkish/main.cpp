@@ -5,7 +5,9 @@
 
 int main() {
 
-	stateManager State = new stateManager(1);
+	while (stateManager::instance()->getQuit() != true) {
+		stateManager::instance()->update();
+	}
 
 	return 0;
 }

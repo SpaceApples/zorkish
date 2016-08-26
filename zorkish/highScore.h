@@ -1,18 +1,18 @@
 #pragma once
 #include "state.h"
 #include "stateManager.h"
-#include <Windows.h>
 #include <iostream>
-class about :
+#include <string>
+
+class highScore :
 	public state
 {
 public:
-	about();
-	~about();
+	highScore();
+	~highScore();
 	void display();
 	void update();
-
 private:
-	bool displayed = false;
+	std::string input = "0";
 };
 
