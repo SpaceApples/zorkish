@@ -152,8 +152,11 @@
     <ClCompile Include="hallFame.cpp" />
     <ClCompile Include="help.cpp" />
     <ClCompile Include="highScore.cpp" />
+    <ClCompile Include="inventory.cpp" />
+    <ClCompile Include="item.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainMenu.cpp" />
+    <ClCompile Include="player.cpp" />
     <ClCompile Include="state.cpp" />
     <ClCompile Include="stateManager.cpp" />
   </ItemGroup>
@@ -164,7 +167,10 @@
     <ClInclude Include="hallFame.h" />
     <ClInclude Include="help.h" />
     <ClInclude Include="highScore.h" />
+    <ClInclude Include="inventory.h" />
+    <ClInclude Include="item.h" />
     <ClInclude Include="mainMenu.h" />
+    <ClInclude Include="player.h" />
     <ClInclude Include="state.h" />
     <ClInclude Include="stateManager.h" />
   </ItemGroup>

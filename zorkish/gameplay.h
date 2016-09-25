@@ -3,8 +3,11 @@
 #include "stateManager.h"
 #include "mainMenu.h"
 #include "highScore.h"
+#include "player.h"
+#include "item.h"
 #include <iostream>
-#include <algorithm>
+#include <vector>
+#include <sstream>
 #include <string>
 
 class gameplay :
@@ -15,7 +18,11 @@ public:
 	~gameplay();
 	void display();
 	void update();
+	void take(std::string, std::string);
+	void drop();
+	void put(std::string);
 private:
 	std::string input = "0";
+	player* _player;
 };
 
