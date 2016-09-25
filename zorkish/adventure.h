@@ -3,6 +3,7 @@
 #include "stateManager.h"
 #include "gameplay.h"
 #include <iostream>
+#include <map>
 class adventure :
 	public state
 {
